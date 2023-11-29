@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Cursos FIC - IFRN Campus Canguaretama</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Cursos FICs</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cursos.html">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cadastro.html"><i class="fa fa-floppy-o"></i> Cadastro</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-user"></i> Perfil
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+              <a class="dropdown-item" href="perfil_dados.html">Meus Dados</a>
+              <a class="dropdown-item" href="perfil_inscricoes.html">Inscrições</a>
+              <a class="dropdown-item" href="perfil_cursos.html">Cursos</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html"><i class="fa fa-sign-in"></i> Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><i class="fa fa-sign-out"></i> Logout</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Cadastro</h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active">Cadastro</li>
+    </ol>
+
+    <!-- Contact Form -->
+    <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <div class="row">
+      <div class="col-md-6 offset-md-3 col-8 offset-2">
+        <form name="sentMessage" id="contactForm" novalidate action="admin.html">
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Nome Completo:</label>
+              <input type="text" class="form-control" name="nome" required>
+              <p class="help-block"></p>
+            </div>
+          </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>CPF:</label>
+              <input type="text" class="form-control" name="cpf" required >
+              <p class="help-block"></p>
+            </div>
+          </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Matrícula no IFRN (se tiver):</label>
+              <input type="text" class="form-control" name="matricula" required >
+              <p class="help-block"></p>
+            </div>
+          </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Telefone:</label>
+              <input type="text" class="form-control" name="telefone" required >
+              <p class="help-block"></p>
+            </div>
+          </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>E-mail:</label>
+              <input type="email" class="form-control" name="email" required placeholder="Será usado no login">
+              <p class="help-block"></p>
+            </div>
+          </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Senha:</label>
+              <input type="password" class="form-control" name="senha" required >
+            </div>
+          </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Repetir Senha:</label>
+              <input type="password" class="form-control" name="senha" required >
+            </div>
+          </div>
+          <div id="success"></div>
+          <!-- For success/fail messages -->
+          <button type="submit" class="btn btn-primary" id="sendMessageButton">Cadastrar</button>
+        </form>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+<br />
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Cursos FICs - IFRN Cang 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Contact form JavaScript -->
+  <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
