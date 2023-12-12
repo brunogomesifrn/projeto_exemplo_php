@@ -38,4 +38,4 @@ CREATE TABLE IF NOT EXISTS usuario(
     senha char(40) not null
 );
 
-insert into usuario (usuario, senha) values ("bruno", "123");
+insert into usuario (nome, usuario, senha) values ("Bruno Gomes", "bruno", md5("123"));
