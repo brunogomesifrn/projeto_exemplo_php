@@ -14,7 +14,10 @@
           </li>
 
           <?php 
-          session_start();
+          // Verificar se sessão já foi iniciada anteriormentre
+          if(session_id() == '')
+            session_start();
+          
           if (!isset($_SESSION['usuario'])) {
           ?>
           <li class="nav-item">
