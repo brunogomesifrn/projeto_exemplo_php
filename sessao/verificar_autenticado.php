@@ -19,7 +19,7 @@ foi criada. Caso negativo, redireciona o
 usuário para a página de login se autenticar.
 */
 if (!isset($_SESSION['usuario'])) {
-    header("location: login.php");
+    header("location: login.php?erro=Você+não+tem+permissão+de+acesso");
     die('');
 }
 ?>
