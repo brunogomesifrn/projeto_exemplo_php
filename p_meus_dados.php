@@ -1,3 +1,5 @@
+<?php include 'sessao/verificar_autenticado.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
