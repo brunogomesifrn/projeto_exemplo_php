@@ -6,12 +6,6 @@
 
   <?php include 'bases/head.php'; ?>
 
-  <style type="text/css">
-    .carousel-item{
-        height: 200px;
-    } 
-  </style>
-
 </head>
 
 <body>
@@ -31,7 +25,13 @@
      <label for="senha">Senha:</label>
      <input type="password" name="senha" id="senha">
  </p>
+ 
 
+<?php
+if (isset($_GET['erro'])) {
+    echo "<p class='text-danger'>".$_GET['erro']."</p>";
+}
+?>
  <p><input type="submit" value="Cadastrar"></p>
 </form>
  </div>

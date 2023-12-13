@@ -24,7 +24,7 @@ if ($result->num_rows > 0) {
     die();
 }else{
     desconectar($conn);
-    header("Location: ../login.php");
+    header("Location: ../login.php?erro=Usuario+e/ou+senha+incorretos");
     die();
 }
 
