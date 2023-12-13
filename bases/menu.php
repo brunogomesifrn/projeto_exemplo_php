@@ -31,7 +31,7 @@
               <i class="fa fa-user"></i> Perfil
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="perfil_dados.html">Meus Dados</a>
+              <a class="dropdown-item" href="p_meus_dados.php">Meus Dados</a>
               <a class="dropdown-item" href="perfil_inscricoes.html">Inscrições</a>
               <a class="dropdown-item" href="perfil_cursos.html">Cursos</a>
             </div>

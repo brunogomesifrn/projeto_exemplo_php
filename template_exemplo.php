@@ -7,11 +7,7 @@
     <!-- INCLUINDO CÓDIGO DE HEAD COMUM A TODAS AS PÁGINAS -->
     <?php include 'bases/head.php'; ?>
 
-    <style type="text/css">
-    .carousel-item{
-        height: 200px;
-    } 
-    </style>
+
 
 </head>
 

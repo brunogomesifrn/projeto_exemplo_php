@@ -20,7 +20,7 @@ if ($result->num_rows > 0) {
         $_SESSION['usuario'] = $row['nome'];
     }
     desconectar($conn);
-    header("Location: ../perfil/");
+    header("Location: ../perfil.php");
     die();
 }else{
     desconectar($conn);
