@@ -31,12 +31,14 @@
           ?>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="perfil.php" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fa fa-user"></i> Perfil
+              <i class="fa fa-user"></i> Usuário
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+              <a class="dropdown-item" href="perfil.php">Página de Perfil</a>
               <a class="dropdown-item" href="p_meus_dados.php">Meus Dados</a>
-              <a class="dropdown-item" href="perfil_inscricoes.html">Inscrições</a>
-              <a class="dropdown-item" href="perfil_cursos.html">Cursos</a>
+              <a class="dropdown-item" href="p_areas.php">Gerenciar Áreas</a>
+              <a class="dropdown-item" href="p_publicos.php">Gerenciar Públicos</a>
+              <a class="dropdown-item" href="p_usuarios.php">Gerenciar Usuários</a>
             </div>
           </li>
           <li class="nav-item">

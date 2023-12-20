@@ -20,8 +20,8 @@
 
   <div class="row mt-5 mb-5">
  <div class="col-lg-6">
-   <h2>Públicos</h2>
-  <p><a href="p_publicos_adicionar.php">Adicionar</a></p>
+   <h2>Núcleos</h2>
+  <p><a href="p_nucleos_adicionar.php">Adicionar</a></p>
 
    <table class="table table-striped">
    <thead>
@@ -39,7 +39,7 @@ include "banco/conexao.php";
 
 $conn = conectar();
 
-$sql = "SELECT * FROM publico";
+$sql = "SELECT * FROM nucleo";
 
 $result = $conn->query($sql);
 
@@ -47,12 +47,12 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
     echo "<tr>";
     echo "<td scope='row'>".$row["nome"]."</td>";
-    echo "<td><a href='p_publicos_editar.php?id=".$row["id"]."'>EDITAR</td>";
-    echo "<td><a href='php/p_publico_remover_bd.php?id=".$row["id"]."'>REMOVER</td>";
+    echo "<td><a href='p_nucleos_editar.php?id=".$row["id"]."'>EDITAR</td>";
+    echo "<td><a href='php/p_nucleo_remover_bd.php?id=".$row["id"]."'>REMOVER</td>";
     echo "</tr>";
   }
 } else {
-  echo "<td>Nenhum público cadastrado</td><td></td><td></td>";
+  echo "<td>Nenhum núcleo cadastrado</td><td></td><td></td>";
 }
 
 desconectar($conn);

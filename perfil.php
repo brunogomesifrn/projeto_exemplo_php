@@ -36,7 +36,7 @@
 
   <div class="col-lg-4 col-sm-6 portfolio-item">
     <div class="card h-100">
-      <a href="curso_detalhes.html">
+      <a href="p_nucleos.php">
         <img class="card-img-top" src="src/img/curso_no_img.jpg" alt="">
         <div class="card-body">
           <h4 class="card-title">
@@ -60,7 +60,7 @@
 
   <div class="col-lg-4 col-sm-6 portfolio-item">
     <div class="card h-100">
-      <a href="curso_detalhes.html">
+      <a href="p_publicos.php">
         <img class="card-img-top" src="src/img/curso_no_img.jpg" alt="">
         <div class="card-body">
           <h4 class="card-title">
