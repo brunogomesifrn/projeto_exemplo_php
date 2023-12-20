@@ -47,8 +47,8 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
     echo "<tr>";
     echo "<td scope='row'>".$row["nome"]."</td>";
-    echo "<td><a href='p_nucleos_editar.php?id=".$row["id"]."'>EDITAR</td>";
-    echo "<td><a href='php/p_nucleo_remover_bd.php?id=".$row["id"]."'>REMOVER</td>";
+    echo "<td><a href='p_nucleos_editar.php?id=".$row["codigo"]."'>EDITAR</td>";
+    echo "<td><a href='php/p_nucleo_remover_bd.php?id=".$row["codigo"]."'>REMOVER</td>";
     echo "</tr>";
   }
 } else {
