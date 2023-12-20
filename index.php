@@ -47,9 +47,35 @@
 
     <div class="row">
 
+    <?php
+        include "banco/conexao.php";
+        $conn = conectar();
+        $sql = "SELECT * FROM nucleo";
+        $result = $conn->query($sql);
+        if ($result->num_rows > 0) {
+          while($row = $result->fetch_assoc()) {
+            echo "<div class='col-lg-4 col-sm-6 portfolio-item'>";
+            echo "<div class='card h-100'>";
+            echo "<a href='nucleo_detalhes.php?codigo=".$row["codigo"]."'>";
+            echo "<img class='card-img-top' src='src/media/".$row["imagem"]."' alt=''>";
+            echo "</a>";
+            echo "<div class='card-body'>";
+            echo "<h4 class='card-title'>";
+            echo "<a href='nucleo_detalhes.php?codigo=".$row["codigo"]."'>".$row["nome"]."</a>";
+            echo "</h4>";
+            echo "<p class='card-text text-uppercase'>".$row["sigla"]."</p>";
+            echo "</h4></div></div></div>";
+        
+          }
+        } else {
+          echo "<td>Nenhum núcleo cadastrado</td><td></td><td></td>";
+        }
 
+        desconectar($conn);
 
-      <div class="col-lg-4 col-sm-6 portfolio-item">
+?>
+
+      <!--<div class="col-lg-4 col-sm-6 portfolio-item">
         <div class="card h-100">
           <a href="curso_detalhes.html"><img class="card-img-top" src="src/img/curso_no_img.jpg" alt=""></a>
           <div class="card-body">
@@ -116,7 +142,8 @@
             <p class="card-text">Resumo 6</p>
           </div>
         </div>
-      </div>
+      </div>-->
+
     </div>
     <!-- /.row -->
 

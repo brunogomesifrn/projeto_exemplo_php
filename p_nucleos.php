@@ -26,6 +26,7 @@
    <table class="table table-striped">
    <thead>
     <tr>
+      <th scope="col">Logo</th>
       <th scope="col">Nome</th>
       <th scope="col">Editar</th>
       <th scope="col">Remover</th>
@@ -46,9 +47,11 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
     echo "<tr>";
+    echo "<td><img class='img-fluid rounded' src='src/media/".$row["imagem"]."' width='50px' alt=''></td>";  
+
     echo "<td scope='row'>".$row["nome"]."</td>";
-    echo "<td><a href='p_nucleos_editar.php?id=".$row["codigo"]."'>EDITAR</td>";
-    echo "<td><a href='php/p_nucleo_remover_bd.php?id=".$row["codigo"]."'>REMOVER</td>";
+    echo "<td><a href='p_nucleos_editar.php?codigo=".$row["codigo"]."'>EDITAR</td>";
+    echo "<td><a href='php/p_nucleo_remover_bd.php?codigo=".$row["codigo"]."'>REMOVER</td>";
     echo "</tr>";
   }
 } else {
