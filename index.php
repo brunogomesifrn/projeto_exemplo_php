@@ -43,7 +43,7 @@
 <br /><br />
 
     <!-- Portfolio Section -->
-    <h2>Últimos Cursos</h2>
+    <h2>Últimos Núcleos Cadastrados</h2>
 
     <div class="row">
 

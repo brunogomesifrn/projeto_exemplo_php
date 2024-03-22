@@ -4,7 +4,7 @@ function conectar()
 {
     $servidor = "localhost";
     $usuario = "root";
-    $senha ="123";
+    $senha ="";
     $banco = "nucleos";
 
     $conn = new mysqli($servidor, $usuario, $senha, $banco);
